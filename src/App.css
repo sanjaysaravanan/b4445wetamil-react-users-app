@@ -1,0 +1,45 @@
+.dialog {
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.dialog-root {
+  background-color: white;
+  opacity: 1;
+  position: absolute;
+  height: 250px;
+  width: 500px;
+  top: 50px;
+  left: calc(50% - 250px);
+  animation-name: zoom-in;
+  animation-timing-function: ease-in;
+  animation-duration: 100ms;
+  animation-iteration-count: 1;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+img {
+  height: 250px;
+  width: 150px;
+}
+
+@keyframes zoom-in {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
